@@ -102,7 +102,7 @@
         android:padding="8dp">
     <TextView
         android:id="@+id/nettextview"
-        android:layout_width="200dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:text="Net Amount"
         android:textColor="#fff"
@@ -113,7 +113,7 @@
         android:id="@+id/colontext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=":    Rs. "
+        android:text=":  Rs. "
         android:textStyle="bold"
         android:textColor="#fff"
         android:textSize="18sp"

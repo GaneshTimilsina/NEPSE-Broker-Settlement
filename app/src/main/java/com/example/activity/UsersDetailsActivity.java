@@ -167,12 +167,6 @@ public class UsersDetailsActivity extends AppCompatActivity implements OnMapRead
         });
     }
 
-
-
-
-
-
-
     }
 
     @Override
@@ -215,7 +209,7 @@ public class UsersDetailsActivity extends AppCompatActivity implements OnMapRead
         return super.onOptionsItemSelected(item);
     }
     public void addSharedPreferencedData(){
-        Toast.makeText(getApplicationContext(),"Data Saved Successfully!",Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getApplicationContext(),"Data Saved Successfully!",Toast.LENGTH_SHORT).show();
         String Name = name.getText().toString().trim();
         String Phone = ph.getText().toString().trim();
         String Email = email.getText().toString().trim();
@@ -228,7 +222,9 @@ public class UsersDetailsActivity extends AppCompatActivity implements OnMapRead
                     for (int ind = 0; ind < bno.length; ind++) {
                         if (bno[ind].equals(BrokerNO)) {
                             index[0] = ind;
+                            break;
                         }
+
                     }
                     if (index[0] != 0) {
                         SharedPreferences.Editor editor = sharedPreferences.edit();

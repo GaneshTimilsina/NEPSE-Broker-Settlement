@@ -326,7 +326,7 @@ public class MainActivity extends AppCompatActivity {
         else {
             netText.setTextColor(getResources().getColor(R.color.black));
             netAmountText.setTextColor(getResources().getColor(R.color.black));
-            colonText.setTextColor(getResources().getColor(R.color.black));
+            colonText.setVisibility(View.INVISIBLE);
             netText.setText("Payable Amount");
             netAmountText.setText("Amount Settled");
 
