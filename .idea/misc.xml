@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_dropdown_item.xml" value="0.3188405797101449" />
+        <entry key="../../Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_item.xml" value="0.3188405797101449" />
+        <entry key="app/src/main/res/drawable-v24/rectangular_shape_background_green.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable-v24/rectangular_shape_background_marketdetails.xml" value="0.36615384615384616" />
+        <entry key="app/src/main/res/drawable-v24/rectangular_shape_background_red.xml" value="0.36615384615384616" />
+        <entry key="app/src/main/res/drawable/add.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/buy.xml" value="0.3" />
+        <entry key="app/src/main/res/drawable/calculator.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/edittextbuysellbackgroundshape.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/history.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/home.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/rectangular_shape_add_transaction_button.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/rectangular_shape_background.xml" value="0.2140625" />
+        <entry key="app/src/main/res/layout/activity_account_ledger.xml" value="0.33152173913043476" />
+        <entry key="app/src/main/res/layout/activity_broker_list.xml" value="0.27445652173913043" />
+        <entry key="app/src/main/res/layout/activity_broker_profile.xml" value="0.27445652173913043" />
+        <entry key="app/src/main/res/layout/activity_buy_sell_details.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/activity_calculator.xml" value="0.32563405797101447" />
+        <entry key="app/src/main/res/layout/activity_calculator_bonus_adjustment.xml" value="0.32563405797101447" />
+        <entry key="app/src/main/res/layout/activity_calculator_buy.xml" value="0.32563405797101447" />
+        <entry key="app/src/main/res/layout/activity_cash_paid.xml" value="0.32563405797101447" />
+        <entry key="app/src/main/res/layout/activity_history.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_list_menu.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_show_buying_details.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_show_selling_details.xml" value="0.2871376811594203" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.30027173913043476" />
+        <entry key="app/src/main/res/layout/activity_splash_screen2.xml" value="0.30027173913043476" />
+        <entry key="app/src/main/res/layout/activity_stock_inventory_details.xml" value="0.3423913043478261" />
+        <entry key="app/src/main/res/layout/activity_users_details.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/activity_website_view.xml" value="0.33061594202898553" />
+        <entry key="app/src/main/res/layout/bottomlayout.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/brokerlistlayout.xml" value="0.27445652173913043" />
+        <entry key="app/src/main/res/layout/buyingdetailslistviewdesign.xml" value="0.33695652173913043" />
+        <entry key="app/src/main/res/layout/fragment_buy_details.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/fragment_buy_history.xml" value="0.33695652173913043" />
+        <entry key="app/src/main/res/layout/fragment_calculator_bonus_adjustment.xml" value="0.3197463768115942" />
+        <entry key="app/src/main/res/layout/fragment_calculator_buy.xml" value="0.32563405797101447" />
+        <entry key="app/src/main/res/layout/fragment_calculator_right_share_adjustment.xml" value="0.32563405797101447" />
+        <entry key="app/src/main/res/layout/fragment_calculator_sell.xml" value="0.32563405797101447" />
+        <entry key="app/src/main/res/layout/fragment_sell_details.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/fragment_sell_history.xml" value="0.340625" />
+        <entry key="app/src/main/res/layout/inventorylistviewdesing.xml" value="0.3423913043478261" />
+        <entry key="app/src/main/res/layout/ledgerlistviewdesing.xml" value="0.33152173913043476" />
+        <entry key="app/src/main/res/layout/listmenudesing.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/rectangular_shape_layout.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/spinner_list.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/toolbar.xml" value="0.29483695652173914" />
+        <entry key="app/src/main/res/menu/floatingbtnlist.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/menu/toolbar_menu.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/menu/toolbareditbutton.xml" value="0.35572916666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

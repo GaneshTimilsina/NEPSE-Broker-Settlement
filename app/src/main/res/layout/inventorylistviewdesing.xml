@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/inventid"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:id="@+id/inventstock"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="SPDL"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:layout_marginLeft="45dp"
+            />
+        <TextView
+            android:id="@+id/rstextview"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="Rs. "
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/inventprice"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:layout_marginLeft="2dp"
+            />
+        <TextView
+            android:id="@+id/inventunits"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Units"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:layout_marginLeft="50dp"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

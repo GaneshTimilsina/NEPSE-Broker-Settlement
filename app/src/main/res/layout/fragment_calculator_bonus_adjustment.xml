@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/AllActivityBackgroundColor"
+    tools:context="com.example.fragments.CalculatorBonusAdjustment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Market Price (Before Book Closure)"
+        style="@style/TextViewStyle"
+        />
+    <EditText
+        android:id="@+id/pricebeforeadjustment"
+        android:layout_width="match_parent"
+        style="@style/EditTextViewStyle"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        android:hint="Eg: 300"
+        />
+    <TextView
+        android:id="@+id/percentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bonus Share Percentage"
+        style="@style/TextViewStyle"
+        />
+    <EditText
+        android:id="@+id/bonuspercentage"
+        android:layout_width="match_parent"
+        style="@style/EditTextViewStyle"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        android:hint="Eg: 15%"
+        />
+    <TextView
+        android:id="@+id/caculatebonusadjustment"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="CALCULATE"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="22sp"
+        android:textColor="#FFF"
+        android:background="@drawable/rectangular_shape_add_transaction_button"
+        />
+    <TextView
+        android:id="@+id/priceafteradjustment"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Adjusted Price"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="22sp"
+        android:textColor="#FFF"
+        android:visibility="invisible"
+        android:background="@drawable/rectangular_shape_background_green"
+        />
+
+
+</LinearLayout>

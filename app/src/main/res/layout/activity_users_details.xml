@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AllActivityBackgroundColor"
+    tools:context="com.example.activity.UsersDetailsActivity">
+    <include
+        layout="@layout/toolbar"/>
+
+        <LinearLayout
+            android:id="@+id/dataAddLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Full Name" />
+
+            <EditText
+                android:id="@+id/userName"
+                style="@style/EditTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:hint="Ganesh Timilsina"
+                android:padding="5dp" />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Phone No." />
+
+            <EditText
+                android:id="@+id/userPh"
+                style="@style/EditTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:hint="9816653748"
+                android:inputType="number"
+                android:padding="5dp" />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Email Addresss" />
+
+            <EditText
+                android:id="@+id/userEmail"
+                style="@style/EditTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:hint="ganesh.timilsina777@gamil.com"
+                android:inputType="textEmailAddress"
+                android:padding="5dp" />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Broker No." />
+
+            <EditText
+                android:id="@+id/userBn"
+                style="@style/EditTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:hint="13"
+                android:inputType="number"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/addtransactionbuy"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/rectangular_shape_add_transaction_button"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Save Data"
+                android:textColor="#FFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <!-- For Edit is visible-->
+
+        <LinearLayout
+            android:id="@+id/alldetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/UserShowName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8D32F"
+                android:gravity="center"
+                android:text="Ganesh Timilsina"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittextbuysellbackgroundshape"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Ph. No: "
+                        android:textColor="#E8E2E2"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/UserShowPh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Share Amount"
+                        android:textColor="#E8E2E2"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#FDF7E2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Email Add."
+                        android:textColor="#E8E2E2"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/UserShowEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Share Amount"
+                        android:textColor="#E8E2E2"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/BrokerShowName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8D32F"
+                android:gravity="center"
+                android:text="Kumari Securities Pvt. Limited"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittextbuysellbackgroundshape"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Broker No."
+                        android:textColor="#E8E2E2"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/brokernomb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Share Amount"
+                        android:textColor="#E8E2E2"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#FDF7E2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textColor="#E8E2E2"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/baddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Share Amount"
+                        android:textColor="#E8E2E2"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#FDF7E2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Contact No."
+                        android:textColor="#E8E2E2"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/bcontact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Share Amount"
+                        android:textColor="#E8E2E2"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:id="@+id/callphone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/phone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#FDF7E2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Website"
+                        android:textColor="#E8E2E2"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/website"
+                        android:layout_width="215dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Share Amount"
+                        android:textColor="#E8E2E2"
+                        android:textSize="13dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:id="@+id/wesiteicon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/website" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <fragment
+                android:id="@+id/maps"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>

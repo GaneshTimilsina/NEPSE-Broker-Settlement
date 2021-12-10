@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/rectangular_shape_add_transaction_button"
+    >
+    <ImageView
+        android:id="@+id/listviewimage"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:src="@drawable/history"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="10dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="10dp"
+        >
+        <TextView
+            android:id="@+id/listviewtitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="History"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:textColor="#FFF"
+
+            />
+        <TextView
+            android:id="@+id/listviewsubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            android:text="Your Buy And Sell History"
+            android:textColor="#FFF"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="SetBuy">250dp</dimen>
+    <dimen name="SetSell">190dp</dimen>
+    <dimen name="SetCash">130dp</dimen>
+    <dimen name="SetCalculator">70dp</dimen>
+</resources>

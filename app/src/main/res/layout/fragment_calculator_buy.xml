@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/AllActivityBackgroundColor"
+    tools:context="com.example.fragments.CalculatorBuy">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stock Price"
+        style="@style/TextViewStyle"
+        android:padding="5dp"
+        />
+    <EditText
+        android:id="@+id/buyingprice"
+        android:layout_width="match_parent"
+        style="@style/EditTextViewStyle"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        android:hint="Eg: 470"
+        android:padding="5dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Units"
+        style="@style/TextViewStyle"
+        android:padding="5dp"
+        />
+    <EditText
+        android:id="@+id/buyingunits"
+        android:layout_width="match_parent"
+        style="@style/EditTextViewStyle"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        android:padding="5dp"
+        android:hint="Eg: 100"
+        />
+    <TextView
+        android:id="@+id/calculatebuydetails"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="CALCULATE"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="22sp"
+        android:textColor="#FFF"
+        android:background="@drawable/rectangular_shape_add_transaction_button"
+        />
+    <!-- Display Layout -->
+    <LinearLayout
+        android:id="@+id/resultlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible"
+        android:background="@drawable/edittextbuysellbackgroundshape"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share Amount"
+                android:textColor="#E8E2E2"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/shareamount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Share Amount"
+                android:textColor="#E8E2E2"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="#FDF7E2"
+            android:layout_height="2dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEBON Commission"
+                android:textColor="#E8E2E2"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/seboncommission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Share Amount"
+                android:textColor="#E8E2E2"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="#FDF7E2"
+            android:layout_height="2dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Broker Commission"
+                android:textColor="#E8E2E2"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/brokercommission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Share Amount"
+                android:textColor="#E8E2E2"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="#FDF7E2"
+            android:layout_height="2dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DP Charge"
+                android:textColor="#E8E2E2"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/dpcharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Share Amount"
+                android:textColor="#E8E2E2"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="#FDF7E2"
+            android:layout_height="2dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cost Per Share"
+                android:textColor="#E8E2E2"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/costpershare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Share Amount"
+                android:textColor="#E8E2E2"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="#FDF7E2"
+            android:layout_marginTop="30dp"
+            android:layout_height="2dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Paid Amount"
+                android:textColor="#E8E2E2"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/totalamount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Share Amount"
+                android:textStyle="bold"
+                android:textColor="#E8E2E2"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

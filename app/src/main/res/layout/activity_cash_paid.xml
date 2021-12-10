@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.activity.CashPaidActivity"
+    android:background="@color/AllActivityBackgroundColor"
+    android:padding="5dp"
+    >
+
+    <include
+        layout="@layout/toolbar"/>
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="For Stock"
+        style="@style/TextViewStyle"
+        />
+    <EditText
+        android:id="@+id/paidstock"
+        android:layout_width="match_parent"
+        style="@style/EditTextViewStyle"
+        android:layout_marginTop="5dp"
+        android:inputType="textCapCharacters"
+        android:hint="Eg. SPDL"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        style="@style/TextViewStyle"
+        />
+    <EditText
+        android:id="@+id/paidamount"
+        android:layout_width="match_parent"
+        style="@style/EditTextViewStyle"
+        android:layout_marginTop="5dp"
+        android:inputType="numberDecimal"
+        android:hint="Eg: 470"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remark"
+        style="@style/TextViewStyle"
+        />
+    <EditText
+        android:id="@+id/paidremark"
+        android:layout_width="match_parent"
+        style="@style/EditTextViewStyle"
+        android:layout_marginTop="5dp"
+        android:hint="Eg. Money For Net Settelment"
+        />
+
+
+    <TextView
+        android:id="@+id/addtransactionbuy"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Add Transaction"
+        android:layout_marginTop="80dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="22sp"
+        android:textColor="#FFF"
+        android:background="@drawable/rectangular_shape_add_transaction_button"
+        />
+
+
+
+
+</LinearLayout>

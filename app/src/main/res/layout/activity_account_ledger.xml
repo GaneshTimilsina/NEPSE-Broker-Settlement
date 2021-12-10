@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AllActivityBackgroundColor"
+    tools:context="com.example.activity.AccountLedger">
+    <include
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="55dp"
+        android:background="#3F997B"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextBuyHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="S.N" />
+
+        <TextView
+            style="@style/TextBuyHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Stocks" />
+
+        <TextView
+            android:id="@+id/textview1"
+            style="@style/TextBuyHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Debit" />
+
+        <TextView
+            android:id="@+id/textview3"
+            style="@style/TextBuyHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:text="Credit" />
+
+        <TextView
+            android:id="@+id/textview2"
+            style="@style/TextBuyHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:text="Remark" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/ledgerlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_above="@+id/totalcalculation"
+        android:layout_below="@+id/layout1"
+ />
+
+    <LinearLayout
+        android:id="@+id/totalcalculation"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:background="@drawable/edittextbuysellbackgroundshape"
+        android:layout_margin="5dp"
+        >
+        <TextView
+            android:id="@+id/nettextview"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Net Amount"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":    Rs. "
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/netamount"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text=": Rs. 500000"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+
+
+    </LinearLayout>
+
+  </RelativeLayout>

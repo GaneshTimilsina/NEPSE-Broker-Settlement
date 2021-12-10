@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nepse_brokersettlement">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.    READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NEPSEBrokerSettlement"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.example.activity.UsersDetailsActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="true" />
+        <activity
+            android:name="com.example.activity.ShowSellingDetails"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.activity.WebsiteView"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC2bJKcnLUlbQ6MSPKYaiE3MocxIUD1-54" />
+
+        <activity
+            android:name="com.example.activity.BrokerProfile"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name="com.example.activity.BrokerList"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name="com.example.activity.CashPaidActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name="com.example.activity.AccountLedger"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name="com.example.activity.StockInventoryDetails"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name="com.example.activity.CalculatorActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name="com.example.activity.ShowBuyingDetails"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name="com.example.activity.History"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name="com.example.activity.ListMenu"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name="com.example.activity.BuySellDetails"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+    </application>
+
+</manifest>

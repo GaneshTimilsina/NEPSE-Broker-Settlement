@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.activity.BrokerProfile"
+    android:background="@color/AllActivityBackgroundColor"
+    >
+    <include
+        layout="@layout/toolbar"/>
+    <LinearLayout
+        android:id="@+id/alldetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="57dp"
+        >
+        <TextView
+            android:id="@+id/brokerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kumari Securities Pvt. Limited"
+            android:background="#A8D32F"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/edittextbuysellbackgroundshape"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Broker No."
+                    android:textColor="#E8E2E2"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/brokerno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Share Amount"
+                    android:textColor="#E8E2E2"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="#FDF7E2"
+                android:layout_height="2dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textColor="#E8E2E2"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/baddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Share Amount"
+                    android:textColor="#E8E2E2"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="#FDF7E2"
+                android:layout_height="2dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Contact No."
+                    android:textColor="#E8E2E2"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/bcontact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Share Amount"
+                    android:textColor="#E8E2E2"
+                    android:textSize="20dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+                    <ImageView
+                        android:id="@+id/callphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/phone"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="#FDF7E2"
+                android:layout_height="2dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Branches"
+                    android:textColor="#E8E2E2"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/bbranch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Share Amount"
+                    android:textColor="#E8E2E2"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="#FDF7E2"
+                android:layout_height="2dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Website"
+                    android:textColor="#E8E2E2"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/website"
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Share Amount"
+                    android:textColor="#E8E2E2"
+                    android:textSize="13dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+                <ImageView
+                    android:id="@+id/wesiteicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/website"
+                    />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/brokerlocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alldetails"
+        android:layout_marginTop="10dp"
+        android:text="Broker's Office Location"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/internetconnection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brokerlocation"
+        android:background="@color/redText"
+        android:gravity="center_horizontal"
+        android:text="No internet connection"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <fragment
+        android:id="@+id/maps"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="309dp"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>

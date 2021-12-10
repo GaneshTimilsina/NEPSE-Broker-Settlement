@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@color/AllActivityBackgroundColor">
+    <include
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/timelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangular_shape_background"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:paddingLeft="5dp"
+        >
+        <TextView
+            android:id="@+id/realtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/realdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="12dp"
+            />
+        <TextView
+            android:id="@+id/marketdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open/Closed..."
+            android:layout_gravity="end"
+            android:layout_marginRight="5dp"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="4dp"
+            android:background="@drawable/rectangular_shape_background_red"
+
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/bottnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#7269F4"
+        >
+        <ImageView
+            android:id="@+id/homeBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/home"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            />
+
+        <ImageView
+            android:id="@+id/listBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/list" />
+
+        <ImageView
+            android:id="@+id/userBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/user_icon" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/totalcalculation"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/timelayout"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edittextbuysellbackgroundshape"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+    <TextView
+        android:id="@+id/nettextview"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Net Amount"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/colontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":    Rs. "
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/netamount"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="500000"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/totalcalculation"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-12dp"
+        android:textColor="#6C66EE"
+        android:background="@color/AllActivityBackgroundColor"
+        android:text=" Quick Account Review  "
+        android:textStyle="italic|bold" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/floatingextbuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/buy"
+        android:text="Buy"
+        android:layout_above="@id/bottnLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:visibility="invisible"
+        />
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/floatingextsell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/selllist"
+        android:text="Sell"
+        android:layout_above="@id/bottnLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:visibility="invisible"
+        />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/floatingextcashpaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottnLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Cash Paid"
+        android:visibility="invisible"
+        app:icon="@drawable/cashpaid" />
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/floatingextcalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottnLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Calculator"
+        android:visibility="invisible"
+        app:icon="@drawable/calculator" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addfloatingbtn"
+        android:src="@drawable/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottnLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp" />
+
+
+</RelativeLayout>
