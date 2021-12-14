@@ -106,7 +106,7 @@
         android:layout_height="wrap_content"
         android:text="Net Amount"
         android:textColor="#fff"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         />
     <TextView
@@ -116,7 +116,7 @@
         android:text=":  Rs. "
         android:textStyle="bold"
         android:textColor="#fff"
-        android:textSize="18sp"
+        android:textSize="16sp"
         />
     <TextView
         android:id="@+id/netamount"
@@ -125,7 +125,7 @@
         android:text="500000"
         android:textStyle="bold"
         android:textColor="#fff"
-        android:textSize="18sp"
+        android:textSize="16sp"
         />
     </LinearLayout>
 

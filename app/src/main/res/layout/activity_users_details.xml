@@ -9,12 +9,23 @@
     tools:context="com.example.activity.UsersDetailsActivity">
     <include
         layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginTop="55dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
 
         <LinearLayout
             android:id="@+id/dataAddLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="55dp"
+            android:layout_marginTop="5dp"
             android:orientation="vertical"
             android:visibility="visible">
 
@@ -30,7 +41,7 @@
                 style="@style/EditTextViewStyle"
                 android:layout_width="match_parent"
                 android:layout_marginTop="5dp"
-                android:hint="Ganesh Timilsina"
+                android:hint="Peter Wilson"
                 android:padding="5dp" />
 
             <TextView
@@ -45,7 +56,7 @@
                 style="@style/EditTextViewStyle"
                 android:layout_width="match_parent"
                 android:layout_marginTop="5dp"
-                android:hint="9816653748"
+                android:hint="9811112398"
                 android:inputType="number"
                 android:padding="5dp" />
 
@@ -61,7 +72,7 @@
                 style="@style/EditTextViewStyle"
                 android:layout_width="match_parent"
                 android:layout_marginTop="5dp"
-                android:hint="ganesh.timilsina777@gamil.com"
+                android:hint="peter.wilson@gamil.com"
                 android:inputType="textEmailAddress"
                 android:padding="5dp" />
 
@@ -100,7 +111,7 @@
             android:id="@+id/alldetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="55dp"
+            android:layout_marginTop="5dp"
             android:orientation="vertical"
             android:visibility="invisible">
 
@@ -340,6 +351,8 @@
                 android:layout_marginBottom="5dp"/>
 
         </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 
 

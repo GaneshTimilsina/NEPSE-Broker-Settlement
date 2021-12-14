@@ -44,7 +44,7 @@ public class BuySellDetails extends AppCompatActivity {
 
         }
         if (decidePager.equals("FromSell")){
-            Toast.makeText(getApplicationContext(),"Buy",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Provide Details",Toast.LENGTH_SHORT).show();
             viewPager.setCurrentItem(1);
         }
 

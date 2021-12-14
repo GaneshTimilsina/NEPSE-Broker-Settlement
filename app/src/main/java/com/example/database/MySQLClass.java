@@ -70,7 +70,6 @@ public class MySQLClass extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         try{
-            Toast.makeText(context.getApplicationContext(), "Table Created",Toast.LENGTH_SHORT).show();
             sqLiteDatabase.execSQL(BUYTABLEQUERY);
             sqLiteDatabase.execSQL(SELLTABLEQUERY);
             sqLiteDatabase.execSQL(LEDGERTABLEQUERY);
@@ -99,7 +98,7 @@ public class MySQLClass extends SQLiteOpenHelper {
 
         //db.insert(BUYTABLE,null,contentValues);
         if (db.insert(BUYTABLE,null,contentValues)>0){
-        Toast.makeText(context.getApplicationContext(), "Value Inserted!!",Toast.LENGTH_SHORT).show();
+        Toast.makeText(context.getApplicationContext(), "Details Saved!!",Toast.LENGTH_SHORT).show();
         }
         else {
             Toast.makeText(context.getApplicationContext(), "Failed to Upload!!",Toast.LENGTH_SHORT).show();
@@ -306,8 +305,6 @@ public class MySQLClass extends SQLiteOpenHelper {
                 if (Stock.equals(StockName)) {
                     details[0] = cursor.getDouble(2);
                     details[1] = cursor.getDouble(3);
-                    System.out.println("Display1: "+details[0]+details[1]);
-                    //Toast.makeText(context.getApplicationContext(),"Stock Found"+details[0]+details[1],Toast.LENGTH_SHORT).show();
 
                 }
             }
@@ -372,4 +369,6 @@ public class MySQLClass extends SQLiteOpenHelper {
 
 
     }
+
+
 }

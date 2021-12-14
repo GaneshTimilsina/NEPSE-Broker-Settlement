@@ -3,6 +3,7 @@ package com.example.activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.database.MySQLClass;
+import com.example.nepse_brokersettlement.MainActivity;
 import com.example.nepse_brokersettlement.R;
 
 public class CashPaidActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
@@ -60,6 +62,8 @@ public class CashPaidActivity extends AppCompatActivity implements AdapterView.O
                     double cash = Double.parseDouble(paidAmount);
 
                         mySQLClass.insertBuyIntoLedger(paidStock,cash,selected);
+                        startActivity(new Intent(CashPaidActivity.this, MainActivity.class));
+                        Toast.makeText(getApplicationContext(),selected + " Successfully",Toast.LENGTH_SHORT).show();
 
                 }
                 else {

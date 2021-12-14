@@ -33,7 +33,6 @@ public class StockInventoryDetails extends AppCompatActivity {
 
         MySQLClass mySQLClass = new MySQLClass(this);
         arrayList = mySQLClass.readInventoryTable();
-        //Toast.makeText(getApplicationContext(),arrayList.get(0).getId(),Toast.LENGTH_SHORT).show();
         StockInventoryArrayAdapter adapter = new StockInventoryArrayAdapter(getApplicationContext(),R.layout.inventorylistviewdesing,arrayList);
         listView.setAdapter(adapter);
 
